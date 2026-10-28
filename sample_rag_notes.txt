@@ -1,0 +1,9 @@
+RAG SAMPLE DOCUMENT
+
+Retrieval-Augmented Generation combines a retrieval step with language generation. The retriever finds passages related to the user's question, and the language model uses those passages as context to generate an answer.
+
+A common RAG pipeline includes document loading, text splitting, embedding generation, vector storage, semantic retrieval, prompt construction, answer generation, and source verification.
+
+Chunk size determines the approximate amount of text in each chunk. Chunk overlap keeps some text shared between neighboring chunks. Top-k determines how many chunks are retrieved for each query. These values should be tested against representative questions.
+
+Source passages allow a user to inspect whether a generated answer is supported. A reliable document assistant should say when the indexed documents do not provide enough evidence.
